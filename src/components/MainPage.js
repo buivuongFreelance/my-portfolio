@@ -1,49 +1,44 @@
 import React, { useState } from "react";
 import Navbar from "./Navbar";
 import hiIco from "../public/img/hi.png";
-import localizationIco from "../public/img/place.png";
-import lndIco from "../public/img/linkedinIco.png";
 import gitIco from "../public/img/githubIco.png";
-import htmlIco from "../public/img/html.png";
-import cssIco from "../public/img/css.png";
-import jsIco from "../public/img/js.png";
-import bootIco from "../public/img/bootstrap.png";
 import reactIco from "../public/img/react.png";
-import threeIco from "../public/img/three.png";
 import avatar from "../public/img/avatar.png";
+import microIco from "../public/img/micro.png";
+import nodeIco from "../public/img/node.png";
+import kuberIco from "../public/img/kubernetes.png";
 import { OrbitControls, Sphere, MeshDistortMaterial } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 
 export default function MainPage() {
-  const [html, setHtml] = useState("");
+  const [kuber, setKuber] = useState("");
   const [css, setCss] = useState("");
   const [js, setJs] = useState("");
   const [boot, setBoot] = useState("");
   const [react, setReact] = useState("");
-  const [three, setThree] = useState("");
+  const [micro, setMicro] = useState("");
+  const [node, setNode] = useState("");
 
   const handleMouseEnter = (e) => {
-    if (e.target.id == "HTML") {
-      setHtml(true);
-    } else if (e.target.id == "CSS") {
-      setCss(true);
+    if (e.target.id == "Micro") {
+      setMicro(true);
+    } else if (e.target.id == "Kuber") {
+      setKuber(true);
     } else if (e.target.id == "JavaScript") {
       setJs(true);
     } else if (e.target.id == "Bootstrap") {
       setBoot(true);
     } else if (e.target.id == "React") {
       setReact(true);
-    } else if (e.target.id == "Three.js") {
-      setThree(true);
+    } else if (e.target.id == "Node") {
+      setNode(true);
     }
   };
   const handleMouseLeave = () => {
-    setHtml();
-    setCss();
-    setJs();
-    setBoot();
+    setNode();
     setReact();
-    setThree();
+    setMicro();
+    setKuber();
   };
   return (
     <div className="section-main" id="home">
@@ -79,42 +74,6 @@ export default function MainPage() {
           <div className="tech-stack-box">
             <div
               className="tech-stack-single-box"
-              id="HTML"
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-            >
-              <img src={htmlIco} className="tech-ico1" alt="html icon" />
-              <span>{html ? "HTML" : ""}</span>
-            </div>
-            <div
-              className="tech-stack-single-box"
-              id="CSS"
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-            >
-              <img src={cssIco} className="tech-ico1" alt="css icon" />
-              <span>{css ? "CSS/SCSS" : ""}</span>
-            </div>
-            <div
-              className="tech-stack-single-box"
-              id="JavaScript"
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-            >
-              <img src={jsIco} className="tech-ico1" alt="js icon" />
-              <span>{js ? "JavaScript" : ""}</span>
-            </div>
-            <div
-              className="tech-stack-single-box"
-              id="Bootstrap"
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-            >
-              <img src={bootIco} className="tech-ico2" alt="bootstrap icon" />
-              <span>{boot ? "Bootstrap" : ""}</span>
-            </div>
-            <div
-              className="tech-stack-single-box"
               id="React"
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
@@ -124,12 +83,30 @@ export default function MainPage() {
             </div>
             <div
               className="tech-stack-single-box"
-              id="Three.js"
+              id="Micro"
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             >
-              <img src={threeIco} className="tech-ico3" alt="three.js icon" />
-              <span>{three ? "Three.js" : ""}</span>
+              <img src={microIco} className="tech-ico2" alt="micro icon" />
+              <span>{micro ? "Microservices" : ""}</span>
+            </div>
+            <div
+              className="tech-stack-single-box"
+              id="Node"
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            >
+              <img src={nodeIco} className="tech-ico2" alt="micro icon" />
+              <span>{node ? "Node.js" : ""}</span>
+            </div>
+            <div
+              className="tech-stack-single-box"
+              id="Kuber"
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            >
+              <img src={kuberIco} className="tech-ico2" alt="micro icon" />
+              <span>{kuber ? "Kubernetes" : ""}</span>
             </div>
           </div>
         </div>

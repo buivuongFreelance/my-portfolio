@@ -19,10 +19,9 @@ export default function Projects() {
         <Project2 />
         <Project3 />
         <div className="project-title mini">
-          <h3>Mini projects</h3>
+          <h3>Other projects</h3>
           <span>
-            This section includes projects from the beginning of my programming
-            education and technologies in which I am just beginning to learn
+            This section includes projects and structures of my programming
           </span>
         </div>
 

@@ -1,9 +1,9 @@
 import React from "react";
 import miniproj1 from "../public/img/miniproj1.png";
-import miniproj2 from "../public/img/miniproj2.png";
-import miniproj3 from "../public/img/miniproj3.png";
+import miniproj2 from "../public/img/shirt.png";
+import miniproj3 from "../public/img/shorten.png";
 import miniproj4 from "../public/img/miniproj4.png";
-import miniproj5 from "../public/img/miniproj5.png";
+import miniproj5 from "../public/img/mini2.png";
 import gitIco from "../public/img/githubIco.png";
 import liveIco from "../public/img/live.png";
 
@@ -13,55 +13,73 @@ export default function MiniProjects() {
       <div className="single-box">
         <img src={miniproj1} className="project-img" alt="project image" />
         <div className="project-description">
-          React application with Bootstrap styles and Firebase authentication
+          Design a website like Facebook with a few main functions
           <a
-            href="https://github.com/PPrzebieda/firebase-authentication"
+            href="https://github.com/buivuongFreelance/my-facebook"
             target="_blank"
           >
             <img src={gitIco} className="liveIco" alt="github icon" />
           </a>
+          <div style={{ height: "50px", lineHeight: "65px" }}>
+            <a target="_blank" href="http://buivuong.cloud:3005">
+              <span>Live Demo</span>
+            </a>
+          </div>
         </div>
       </div>
       <div className="single-box">
         <img src={miniproj2} className="project-img" alt="project image" />
         <div className="project-description">
-          Vanilla JS app that fetches and displays the current time and weather
-          <a href="https://github.com/PPrzebieda/dashboard" target="_blank">
+          Develop a TShirt Custom Designer
+          <a
+            href="https://github.com/buivuongFreelance/my-tshirt"
+            target="_blank"
+          >
             <img src={gitIco} className="liveIco" alt="github icon" />
           </a>
+          <div style={{ height: "50px", lineHeight: "65px" }}>
+            <a target="_blank" href="http://buivuong.cloud:3003">
+              <span>Live Demo</span>
+            </a>
+          </div>
         </div>
       </div>
       <div className="single-box">
         <img src={miniproj3} className="project-img" alt="project image" />
         <div className="project-description">
-          React application with login, registration and dashboard component.
+          Make a shorten URL for SEO
           <a
-            href="https://github.com/PPrzebieda/react-login-app"
+            href="https://github.com/buivuongFreelance/my-shortlink"
             target="_blank"
           >
             <img src={gitIco} className="liveIco" alt="github icon" />
           </a>
+          <div style={{ height: "50px", lineHeight: "65px" }}>
+            <a target="_blank" href="http://buivuong.cloud:3000/">
+              <span>Live Demo</span>
+            </a>
+          </div>
         </div>
       </div>
-      <div className="single-box">
+      {/* <div className="single-box">
         <img src={miniproj4} className="project-img" alt="project image" />
         <div className="project-description">
           Online store outline using HTML and CSS with no JavaScript. Contain
           dropdown menu, tables, forms and other HTML elements.
           <a
-            href="https://github.com/PPrzebieda/html-css-online-shop"
+            href="https://github.com/buivuongFreelance/my-shortlink"
             target="_blank"
           >
             <img src={gitIco} className="liveIco" alt="github icon" />
           </a>
         </div>
-      </div>
+      </div> */}
       <div className="single-box">
         <img src={miniproj5} className="project-img" alt="project image" />
         <div className="project-description">
-          A simple counter for learning Redux
+          Develop a framework structure for Flutter
           <a
-            href="https://github.com/PPrzebieda/redux-counter/tree/main/count"
+            href="https://github.com/buivuongFreelance/flutter_structure"
             target="_blank"
           >
             <img src={gitIco} className="liveIco" alt="github icon" />

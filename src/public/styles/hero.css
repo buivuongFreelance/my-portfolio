@@ -163,9 +163,9 @@
   }
 }
 .section-main .right-container .avatar {
-  width: 20em;
-  height: 20em;
+  width: 17em;
+  /* height: 20em; */
   border-radius: 50%;
-  border: 1px solid #28363d;
+  /* border: 1px solid #28363d; */
   position: absolute;
 }/*# sourceMappingURL=hero.css.map */

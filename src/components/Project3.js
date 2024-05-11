@@ -1,14 +1,8 @@
 import React, { useState } from "react";
-import page3 from "../public/img/page3.png";
-import htmlIco from "../public/img/html.png";
-import cssIco from "../public/img/css.png";
-import jsIco from "../public/img/js.png";
-import bootIco from "../public/img/bootstrap.png";
-import reactIco from "../public/img/react.png";
-import threeIco from "../public/img/three.png";
+import page3 from "../public/img/discord.png";
+
 import gitIco from "../public/img/githubIco.png";
 import liveIco from "../public/img/live.png";
-import firebaseIco from "../public/img/firebase.png";
 
 export default function Project3() {
   const [html, setHtml] = useState("");
@@ -51,55 +45,22 @@ export default function Project3() {
         <img src={page3} className="img-project3" />
       </div>
       <div className="right-container">
-        <h1>Resume Builder</h1>
+        <h1>WebRTC for Dingtoi</h1>
         <div className="description">
-          /*Page is currently under construction. No demo available*/
+          Create Video Chat Functionality
           <br />
+          Create Realtime Communication System
           <br />
-          The project involves the creation of an application in which the user,
-          after logging in, can create a resume by filling out a form. In
-          addition, choosing its color scheme and page layout. The project
-          includes previewing the PDF document and downloading it. Projects
-          zakłada
-          <div className="tech-box">
-            <div
-              className="single-box"
-              id="React"
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-            >
-              <img src={reactIco} className="tech-ico1" alt="html icon" />
-              <span>{react ? "React" : ""}</span>
-            </div>
-            <div
-              className="single-box"
-              id="CSS"
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-            >
-              <img src={cssIco} className="tech-ico2" alt="html icon" />
-              <span>{css ? "CSS/SCSS" : ""}</span>
-            </div>
-            <div
-              className="single-box"
-              id="Firebase"
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-            >
-              <img
-                src={firebaseIco}
-                className="tech-ico1"
-                alt="firebase icon"
-              />
-              <span>{firebase ? "Firebase" : ""}</span>
-            </div>
-          </div>
+          Creating Video Group Call Rooms
           <div className="links">
-            <a href="#projects">
+            <a
+              target="_blank"
+              href="https://github.com/buivuongFreelance/my-discord"
+            >
               <img src={gitIco} className="liveIco" alt="github icon" />
               <span>GitHub</span>
             </a>
-            <a href="#projects">
+            <a target="_blank" href="http://buivuong.cloud:3006/dashboard">
               <img
                 src={liveIco}
                 className="liveIco"

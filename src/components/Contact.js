@@ -33,7 +33,7 @@ export default function Contact() {
     <div className="section-contact" id="contact">
       <div className="contact-container">
         <div className="left-container">
-          <form onSubmit={handleSubmit} ref={form}>
+          {/* <form onSubmit={handleSubmit} ref={form}>
             <h1>Contact me:</h1>
             <input type="text" placeholder="Your name" name="name" required />
             <input
@@ -56,24 +56,26 @@ export default function Contact() {
                 : ""}{" "}
             </span>
             <span>{error ? "Something went wrong :(" : ""} </span>
-          </form>
+          </form> */}
           <div className="contact">
+            <div className="">My Phone: 0906.603.187</div>
+            <br />
             <span>
               <img src={mailIco} /> Or text me at:
             </span>
             <a
-              href="mailto:przemyslaw.przebieda@gmal.com"
+              href="mailto:buivuongdhmo@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              przemyslaw.przebieda@gmail.com
+              buivuongdhmo@gmail.com
             </a>
           </div>
         </div>
 
-        <div className="right-container">
+        {/* <div className="right-container">
           <Map />
-        </div>
+        </div> */}
       </div>
     </div>
   );
